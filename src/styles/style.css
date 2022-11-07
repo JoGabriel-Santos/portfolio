@@ -400,32 +400,27 @@ html {
     border-radius: 20px;
     display: block;
     left: 50%;
-    padding-bottom: 42%;
+    padding-bottom: 44%;
     position: absolute;
     top: 50%;
-    transform: translate(-48%, -44%);
+    transform: translate(-48%, -46%);
     transition: all 0.3s;
-    width: 100%;
+    width: 90%;
     z-index: -2;
 }
 
 .step-image-box:hover:before {
-    transform: translate(-49%, -46%);
+    transform: translate(-49%, -48%);
 }
 
 .step-image {
     border-radius: 10px;
     height: 371px;
     transition: all 0.2s;
-    width: 100%;
-
-    filter: brightness(0.6);
 }
 
 .step-image:hover {
     cursor: pointer;
-
-    filter: brightness(0.8);
 }
 
 .technology-used {
