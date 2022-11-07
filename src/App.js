@@ -6,6 +6,7 @@ import About from './sections/About';
 import Projects from './sections/Projects';
 import Github from './sections/Github';
 import Contact from './sections/Contact';
+import Footer from './sections/Footer';
 
 import '../src/styles/style.css';
 
@@ -21,6 +22,8 @@ function App() {
                 <Github/>
                 <Contact/>
             </main>
+
+            <Footer/>
         </div>
     );
 }

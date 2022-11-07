@@ -17,7 +17,7 @@ function About() {
                 <div className={'about-description'}>
 
                     <p className={'about-description-text'}>
-                        I'm a <b>Backend Web Developer</b> who constantly seeks out
+                        I'm a <b>Full Stack Web Developer</b> who constantly seeks out
                         work opportunities where I can contribute, learn and grow.
                     </p>
 
@@ -28,7 +28,7 @@ function About() {
 
                     <p className={'about-description-text'}>
                         I'm currently learning <b>ReactJs</b>, developing real world projects.
-                        Check out some of my work in the <b>Projects</b> section.
+                        Check out some of my work in the <a href="#projects"><b>Projects</b></a> section.
                     </p>
                 </div>
 

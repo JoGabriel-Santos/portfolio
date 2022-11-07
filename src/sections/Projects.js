@@ -38,7 +38,7 @@ function Projects() {
                 </div>
 
                 <a href="https://github.com/JoGabriel-Santos/facebook-clone" target="_blank" rel="noreferrer">
-                    <div className={'step-image-box'}>
+                    <div className={'step-image-box step-image-box-text-first'}>
                         <img className={'step-image'} src={require('../util/projects/facebook-clone.jpeg')} alt=""/>
                     </div>
                 </a>
@@ -47,7 +47,7 @@ function Projects() {
             <div
                 className={'container grid grid--center-v grid-projects-padding grid-projects-image-first'}>
                 <a href="https://github.com/JoGabriel-Santos/resto" target="_blank" rel="noreferrer">
-                    <div className={'step-image-box'}>
+                    <div className={'step-image-box step-image-box-image-first'}>
                         <img className={'step-image'} src={require('../util/projects/resto.PNG')} alt=""/>
                     </div>
                 </a>
@@ -97,7 +97,7 @@ function Projects() {
                 </div>
 
                 <a href="https://github.com/JoGabriel-Santos/mips-simulator" target="_blank" rel="noreferrer">
-                    <div className={'step-image-box'}>
+                    <div className={'step-image-box step-image-box-text-first'}>
                         <img className={'step-image'} src={require('../util/projects/mips.PNG')} alt=""/>
                     </div>
                 </a>
