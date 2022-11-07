@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contact() {
     return (
-        <section className={'section-contact'}>
+        <section className={'section-contact'} id={'contact'}>
             <div className={'container center-text'}>
                 <span className={'subheading'}>
                     My contacts

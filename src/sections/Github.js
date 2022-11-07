@@ -20,7 +20,7 @@ function Github() {
     }
 
     return (
-        <section className={'section-github'}>
+        <section className={'section-github'} id={'github'}>
             <div className={'container center-text'}>
                 <span className={'subheading'}>
                     More projects below
@@ -37,7 +37,7 @@ function Github() {
                     arrayRepositories.map((repository, index) => (
 
                         <div className="github-projects" key={index}>
-                            <a href={repository.html_url} target={'_blank'}>
+                            <a href={repository.html_url} target="_blank" rel="noreferrer">
                                 <div className="github-projects-content">
                                     <p className="github-projects-title">{repository.name}</p>
 

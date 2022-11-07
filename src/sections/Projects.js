@@ -2,7 +2,7 @@ import React from 'react';
 
 function Projects() {
     return (
-        <section className={'section-projects'}>
+        <section className={'section-projects'} id={'projects'}>
             <div className={'container center-text'}>
                 <span className={'subheading'}>
                     Projects
@@ -18,9 +18,11 @@ function Projects() {
                 <div className={'step-text-box'}>
                     <p className={'step-number'}>01</p>
 
-                    <h3 className={'heading-tertiary step-tittle'}>
-                        Facebook clone
-                    </h3>
+                    <a href="https://github.com/JoGabriel-Santos/facebook-clone" target="_blank" rel="noreferrer">
+                        <h3 className={'heading-tertiary step-tittle'}>
+                            Facebook clone
+                        </h3>
+                    </a>
 
                     <p className={'step-description'}>
                         This project was built using the MERN Stack:
@@ -35,23 +37,29 @@ function Projects() {
                     </div>
                 </div>
 
-                <div className={'step-image-box'}>
-                    <img className={'step-image'} src={require('../util/projects/facebook-clone.jpeg')} alt=""/>
-                </div>
+                <a href="https://github.com/JoGabriel-Santos/facebook-clone" target="_blank" rel="noreferrer">
+                    <div className={'step-image-box'}>
+                        <img className={'step-image'} src={require('../util/projects/facebook-clone.jpeg')} alt=""/>
+                    </div>
+                </a>
             </div>
 
             <div
                 className={'container grid grid--center-v grid-projects-padding grid-projects-image-first'}>
-                <div className={'step-image-box'}>
-                    <img className={'step-image'} src={require('../util/projects/resto.PNG')} alt=""/>
-                </div>
+                <a href="https://github.com/JoGabriel-Santos/resto" target="_blank" rel="noreferrer">
+                    <div className={'step-image-box'}>
+                        <img className={'step-image'} src={require('../util/projects/resto.PNG')} alt=""/>
+                    </div>
+                </a>
 
                 <div className={'step-text-box'}>
                     <p className={'step-number'}>02</p>
 
-                    <h3 className={'heading-tertiary step-tittle'}>
-                        Resto
-                    </h3>
+                    <a href="https://github.com/JoGabriel-Santos/resto" target="_blank" rel="noreferrer">
+                        <h3 className={'heading-tertiary step-tittle'}>
+                            Resto
+                        </h3>
+                    </a>
 
                     <p className={'step-description'}>
                         Fast food restaurant website built with HTML and CSS.
@@ -71,9 +79,11 @@ function Projects() {
                 <div className={'step-text-box'}>
                     <p className={'step-number'}>03</p>
 
-                    <h3 className={'heading-tertiary step-tittle'}>
-                        MIPS Simulator
-                    </h3>
+                    <a href="https://github.com/JoGabriel-Santos/mips-simulator" target="_blank" rel="noreferrer">
+                        <h3 className={'heading-tertiary step-tittle'}>
+                            MIPS Simulator
+                        </h3>
+                    </a>
 
                     <p className={'step-description'}>
                         A monocycle CPU based on MIPS instruction set.
@@ -86,9 +96,11 @@ function Projects() {
                     </div>
                 </div>
 
-                <div className={'step-image-box'}>
-                    <img className={'step-image'} src={require('../util/projects/mips.PNG')} alt=""/>
-                </div>
+                <a href="https://github.com/JoGabriel-Santos/mips-simulator" target="_blank" rel="noreferrer">
+                    <div className={'step-image-box'}>
+                        <img className={'step-image'} src={require('../util/projects/mips.PNG')} alt=""/>
+                    </div>
+                </a>
             </div>
         </section>
     );

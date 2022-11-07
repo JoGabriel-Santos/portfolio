@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 body {
     background-color: #090E16;
     font-family: 'Rubik', sans-serif;
@@ -273,6 +277,7 @@ html {
 }
 
 .socials-icon ion-icon {
+    color: #FFFFFF;
     padding-top: .4rem;
 }
 
@@ -285,6 +290,7 @@ html {
 }
 
 .arrow-down ion-icon {
+    color: #FFFFFF;
     border-radius: 9px;
     padding: 1rem;
     transition: all 0.3s;
