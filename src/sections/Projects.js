@@ -18,7 +18,7 @@ function Projects() {
                 <div className={'step-text-box'}>
                     <p className={'step-number'}>01</p>
 
-                    <h3 className={'heading-tertiary'}>
+                    <h3 className={'heading-tertiary step-tittle'}>
                         Facebook clone
                     </h3>
 
@@ -36,28 +36,25 @@ function Projects() {
                 </div>
 
                 <div className={'step-image-box'}>
-                    <img className={'step-image'}
-                         src={require('../util/projects/facebook-clone.jpeg')}
-                         alt=""/>
+                    <img className={'step-image'} src={require('../util/projects/facebook-clone.jpeg')} alt=""/>
                 </div>
             </div>
 
             <div
                 className={'container grid grid--center-v grid-projects-padding grid-projects-image-first'}>
                 <div className={'step-image-box'}>
-                    <img className={'step-image'}
-                         src={require('../util/projects/resto.PNG')} alt=""/>
+                    <img className={'step-image'} src={require('../util/projects/resto.PNG')} alt=""/>
                 </div>
 
                 <div className={'step-text-box'}>
                     <p className={'step-number'}>02</p>
 
-                    <h3 className={'heading-tertiary'}>
+                    <h3 className={'heading-tertiary step-tittle'}>
                         Resto
                     </h3>
 
                     <p className={'step-description'}>
-                        Fast food restaurant website built with html and css.
+                        Fast food restaurant website built with HTML and CSS.
                         Project developed to obtain a grade on Web Development
                         discipline
                     </p>
@@ -74,15 +71,14 @@ function Projects() {
                 <div className={'step-text-box'}>
                     <p className={'step-number'}>03</p>
 
-                    <h3 className={'heading-tertiary'}>
+                    <h3 className={'heading-tertiary step-tittle'}>
                         MIPS Simulator
                     </h3>
 
                     <p className={'step-description'}>
                         A monocycle CPU based on MIPS instruction set.
                         Project developed to obtain a grade on Computer
-                        Architecture
-                        discipline
+                        Architecture discipline
                     </p>
 
                     <div className={'technology-used'}>
@@ -91,8 +87,7 @@ function Projects() {
                 </div>
 
                 <div className={'step-image-box'}>
-                    <img className={'step-image'}
-                         src={require('../util/projects/mips.PNG')} alt=""/>
+                    <img className={'step-image'} src={require('../util/projects/mips.PNG')} alt=""/>
                 </div>
             </div>
         </section>
