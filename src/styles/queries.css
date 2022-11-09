@@ -87,10 +87,6 @@
         z-index: 9999;
     }
 
-    .header {
-        height: 10rem;
-    }
-
     .main-navigation {
         background-color: rgba(9, 14, 22, 0.98);
         position: absolute;

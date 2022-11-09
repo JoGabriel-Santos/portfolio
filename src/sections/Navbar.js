@@ -57,7 +57,7 @@ function Navbar() {
                     <li><a className={'main-navigation-link'} href="#contact">Contact</a></li>
 
                     <li><a className="main-navigation-link margin-right-sm navigation-cta"
-                           href={require('../util/resume/Resume_Gabriel.pdf')} download>
+                           href={require('../util/resume/Gabriel Santos.pdf')} download>
 
                         Download resume
                     </a></li>
