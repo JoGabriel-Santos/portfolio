@@ -13,7 +13,7 @@ function About() {
                 </h2>
             </div>
 
-            <div className={'container grid grid--2-cols grid--center-v'}>
+            <div className={'container grid grid-about grid--2-cols grid--center-v'}>
                 <div className={'about-description'}>
 
                     <p className={'about-description-text'}>

@@ -13,16 +13,16 @@ function Contact() {
                 </h2>
 
                 <span className={'contact-description'}>
-                    Feel free to Contact me and I will get back to you as soon as possible
+                    Feel free to contact me and I will get back to you as soon as possible
                 </span>
             </div>
 
             <div className={'container center-text contact'}>
-                <a href="https://github.com/JoGabriel-Santos?tab=repositories" target={'_blank'}>
-                    <a className="main-navigation-link margin-right-sm navigation-cta"
+                <a href="https://github.com/JoGabriel-Santos?tab=repositories" target={'_blank'}  rel="noreferrer">
+                    <a className="main-navigation-link navigation-cta"
                        href="mailto: jgabriel.professional@gmail.com">
 
-                        Send Email
+                        SEND E-MAIL
                     </a>
                 </a>
             </div>

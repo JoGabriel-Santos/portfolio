@@ -13,8 +13,7 @@ function Projects() {
                 </h2>
             </div>
 
-            <div
-                className={'container grid grid--center-v grid-projects grid-projects-text-first'}>
+            <div className={'container grid grid--center-v grid-projects grid-projects-text-first'}>
                 <div className={'step-text-box'}>
                     <p className={'step-number'}>01</p>
 
@@ -44,11 +43,13 @@ function Projects() {
                 </a>
             </div>
 
-            <div
-                className={'container grid grid--center-v grid-projects-padding grid-projects-image-first'}>
-                <a href="https://github.com/JoGabriel-Santos/resto" target="_blank" rel="noreferrer">
+            <div className={'container grid grid--center-v grid-projects-padding grid-projects-image-first'}>
+                <a className={'grid-projects-img'}
+                   href="https://github.com/JoGabriel-Santos/resto"
+                   target="_blank" rel="noreferrer">
+
                     <div className={'step-image-box step-image-box-image-first'}>
-                        <img className={'step-image'} src={require('../util/projects/resto.PNG')} alt=""/>
+                        <img className={'step-image'} src={require('../util/projects/resto.png')} alt=""/>
                     </div>
                 </a>
 
@@ -74,12 +75,12 @@ function Projects() {
                 </div>
             </div>
 
-            <div
-                className={'container grid grid--center-v grid-projects grid-projects-text-first'}>
+            <div className={'container grid grid--center-v grid-projects grid-projects-text-first'}>
                 <div className={'step-text-box'}>
                     <p className={'step-number'}>03</p>
 
                     <a href="https://github.com/JoGabriel-Santos/mips-simulator" target="_blank" rel="noreferrer">
+
                         <h3 className={'heading-tertiary step-tittle'}>
                             MIPS Simulator
                         </h3>
@@ -98,7 +99,7 @@ function Projects() {
 
                 <a href="https://github.com/JoGabriel-Santos/mips-simulator" target="_blank" rel="noreferrer">
                     <div className={'step-image-box step-image-box-text-first'}>
-                        <img className={'step-image'} src={require('../util/projects/mips.PNG')} alt=""/>
+                        <img className={'step-image'} src={require('../util/projects/mips.png')} alt=""/>
                     </div>
                 </a>
             </div>

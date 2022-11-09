@@ -9,6 +9,7 @@ import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
 import '../src/styles/style.css';
+import '../src/styles/queries.css';
 
 function App() {
     return (

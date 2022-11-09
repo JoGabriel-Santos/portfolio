@@ -14,15 +14,17 @@ function Hero() {
                         focused on APIs, backend logic, databases and servers.
                     </p>
 
-                    <a className={'button button--full margin-right-sm'}
-                       href={'https://github.com/JoGabriel-Santos'}>
-                        See Github projects
-                    </a>
+                    <div className={'buttons-hero'}>
+                        <a className={'button button--full margin-right-sm'}
+                           href={'https://github.com/JoGabriel-Santos'}>
+                            See Github projects
+                        </a>
 
-                    <a className={'button button--outline'}
-                       href={'https://www.linkedin.com/in/jogabriel-santos/'}>
-                        Visit my LinkedIn
-                    </a>
+                        <a className={'button button--outline'}
+                           href={'https://www.linkedin.com/in/jogabriel-santos/'}>
+                            Visit my LinkedIn
+                        </a>
+                    </div>
                 </div>
             </div>
 

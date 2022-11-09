@@ -38,6 +38,10 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    padding: 9.6rem 4.2rem;
+}
+
 /* ----- Generic Classes -----*/
 
 .button,
@@ -151,7 +155,7 @@ html {
 }
 
 .margin-right-sm {
-    margin-right: 1rem !important;
+    margin-right: 1rem;
 }
 
 /* -----Header ----- */
@@ -171,6 +175,23 @@ html {
     top: 0;
     width: 100%;
     z-index: 1;
+}
+
+.button-navigation-mobile {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-navigation-mobile ion-icon {
+    color: #FFFFFF;
+    height: 4.8rem;
+    width: 4.8rem;
+}
+
+.icon-navigation-mobile ion-icon[name="close-outline"] {
+    display: none;
 }
 
 .logo {
@@ -304,10 +325,6 @@ html {
 
 /* ----- About ----- */
 
-.section-about {
-    padding: 9.6rem 0;
-}
-
 .subheading {
     color: #A071FF;
     display: block;
@@ -348,12 +365,11 @@ html {
 
 /* ----- Projects ----- */
 
-.section-projects {
-    padding: 9.6rem 0;
-}
-
 .grid-projects-text-first {
+    align-items: center;
     grid-template-columns: 1fr 2fr;
+    display: flex;
+    justify-content: center;
 }
 
 .grid-projects-image-first {
@@ -400,40 +416,43 @@ html {
     content: "";
     border-radius: 20px;
     display: block;
+    height: 100%;
     left: 50%;
-    padding-bottom: 44%;
     position: absolute;
     top: 50%;
     transition: all 0.3s;
-    width: 90%;
+    width: 100%;
     z-index: -2;
 }
 
 .step-image-box-text-first:before {
-    transform: translate(-48%, -46%);
+    transform: translate(-47%, -44%);
 }
 
 .step-image-box-text-first:hover:before {
-    transform: translate(-49%, -48%);
+    transform: translate(-48%, -46%);
 }
 
 .step-image-box-image-first:before {
-    transform: translate(-52%, -46%);
+    transform: translate(-53%, -44%);
 }
 
 .step-image-box-image-first:hover:before {
-    transform: translate(-51%, -48%);
+    transform: translate(-52%, -46%);
 }
 
 .step-image {
     border-radius: 10px;
-    height: 370px;
     transition: all 0.2s;
-    width: 760px;
 }
 
 .step-image:hover {
     cursor: pointer;
+}
+
+.step-image-box,
+.step-image {
+    width: 76rem;
 }
 
 .technology-used {
@@ -442,10 +461,6 @@ html {
 }
 
 /* ----- Github ----- */
-
-.section-github {
-    padding: 9.6rem 0;
-}
 
 .grid-github {
     gap: 1.8rem;
@@ -496,10 +511,6 @@ html {
 }
 
 /* ----- Contact ----- */
-
-.section-contact {
-    padding: 9.6rem 0;
-}
 
 .contact {
     padding-bottom: 4.8rem;
