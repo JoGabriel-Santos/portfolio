@@ -1,17 +1,21 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Languages from '../components/Languages';
 
 function Github() {
     const [arrayRepositories, setArrayRepositories] = useState([]);
 
-    useEffect(async () => {
-        await fetch('https://api.github.com/users/jogabriel-santos/repos').then(response => response.json()).then(data => {
-            if (data.length >= 6) {
-                setArrayRepositories(data.slice(0, 6));
-            }
-        });
-    }, []);
+    useEffect(() => {
+        async function fetchData() {
+            await fetch('https://api.github.com/users/jogabriel-santos/repos').then(response => response.json()).then(data => {
+                if (data.length >= 6) {
+                    setArrayRepositories(data.slice(0, 6));
+                }
+            })
+        }
+
+        fetchData()
+    })
 
     function formattedRepoDate(date) {
         const newDate = date.substring(0, 10);
@@ -44,7 +48,7 @@ function Github() {
                                     <p className={'github-projects-last-update'}>last update: {formattedRepoDate(repository.updated_at)}</p>
 
                                     <div className="github-projects-tags">
-                                        <Languages repository_name={repository.name}/>
+                                        <Languages repository_name={repository.name} />
                                     </div>
                                 </div>
                             </a>

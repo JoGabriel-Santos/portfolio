@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from 'react'
 
-function Languages (props) {
+function Languages(props) {
     const [arrayLanguages, setArrayLanguages] = useState([])
 
-    useEffect(async () => {
-        await fetch(`https://api.github.com/repos/JoGabriel-Santos/${props.repository_name}/languages`)
-            .then(response => response.json())
-            .then(data => {
-                setArrayLanguages(data)
-            })
+    useEffect(() => {
+        async function fetchData() {
+            await fetch(`https://api.github.com/repos/JoGabriel-Santos/${props.repository_name}/languages`)
+                .then(response => response.json())
+                .then(data => {
+                    setArrayLanguages(data)
+                })
+        }
 
-    }, [])
+        fetchData()
+    })
 
     return (
         <ul className="tag">

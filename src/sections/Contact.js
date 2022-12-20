@@ -18,12 +18,10 @@ function Contact() {
             </div>
 
             <div className={'container center-text contact'}>
-                <a href="https://github.com/JoGabriel-Santos?tab=repositories" target={'_blank'}  rel="noreferrer">
-                    <a className="main-navigation-link navigation-cta"
-                       href="mailto: jgabriel.professional@gmail.com">
+                <a className="main-navigation-link navigation-cta"
+                    href="mailto: jgabriel.professional@gmail.com">
 
-                        SEND E-MAIL
-                    </a>
+                    SEND E-MAIL
                 </a>
             </div>
         </section>
