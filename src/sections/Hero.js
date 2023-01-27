@@ -36,7 +36,7 @@ function Hero() {
                     </li>
 
                     <li className={'socials-icon'}>
-                        <a href="https://www.instagram.com/jgabriel.sant0s/">
+                        <a href="https://www.instagram.com/jogabriel_santos/">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </a>
                     </li>
