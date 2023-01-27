@@ -10,8 +10,7 @@ function Hero() {
                     </h1>
 
                     <p className={'hero-description'}>
-                        A Computer Scientist with more than 5 years of programming experience,
-                        focused on APIs, backend logic, databases and servers.
+                        I am a Computer Scientist seeking new opportunities to apply the knowledge I acquired during my academic studies.
                     </p>
 
                     <div className={'buttons-hero'}>
