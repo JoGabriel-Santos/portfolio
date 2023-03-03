@@ -1,53 +1,53 @@
-import React from 'react';
+import React from "react";
 
 function Hero() {
+
     return (
-        <section className={'section-hero'} id={'hero'}>
-            <div className={'hero'}>
-                <div className={'hero-text-box'}>
-                    <h1 className={'heading-primary'}>
+        <section className="section-hero" id="hero">
+            <div className="hero">
+                <div className="hero-text-box">
+                    <h1 className="heading-primary">
                         Hey, I'm Gabriel Santos
                     </h1>
 
-                    <p className={'hero-description'}>
+                    <p className="hero-description">
                         I am a Computer Scientist seeking new opportunities to apply the knowledge I acquired during my academic studies.
                     </p>
 
-                    <div className={'buttons-hero'}>
-                        <a className={'button button--full margin-right-sm'}
-                           href={'https://github.com/JoGabriel-Santos'}>
-                            See Github projects
+                    <div className="buttons-hero">
+                        <a className={'button button--full margin-right-sm'} href="/">
+                            Visit my Blog
                         </a>
 
-                        <a className={'button button--outline'}
-                           href={'https://www.linkedin.com/in/jogabriel-santos/'}>
-                            Visit my LinkedIn
+                        <a className="button button--outline"
+                           href="https://www.linkedin.com/in/jogabriel-santos/">
+                            See my LinkedIn
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div className={'hero-socials'}>
-                <ul className={'socials'}>
-                    <li className={'socials-icon'}>
+            <div className="hero-socials">
+                <ul className="socials">
+                    <li className="socials-icon">
                         <a href="https://api.whatsapp.com/send?phone=5598981688750">
                             <ion-icon name="logo-whatsapp"></ion-icon>
                         </a>
                     </li>
 
-                    <li className={'socials-icon'}>
+                    <li className="socials-icon">
                         <a href="https://www.instagram.com/jogabriel_santos/">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </a>
                     </li>
 
-                    <li className={'socials-icon'}>
+                    <li className="socials-icon">
                         <a href="https://www.linkedin.com/in/jogabriel-santos/">
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </a>
                     </li>
 
-                    <li className={'socials-icon'}>
+                    <li className="socials-icon">
                         <a href="https://github.com/JoGabriel-Santos">
                             <ion-icon name="logo-github"></ion-icon>
                         </a>
@@ -55,7 +55,7 @@ function Hero() {
                 </ul>
             </div>
 
-            <div className={'arrow-down'}>
+            <div className="arrow-down">
                 <a href="#about">
                     <ion-icon name="chevron-down-outline"></ion-icon>
                 </a>

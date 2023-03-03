@@ -1,6 +1,6 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from "react";
 
-import Logo from '../util/Logo.svg';
+import Logo from "../util/Logo.svg";
 
 function Navbar() {
 
@@ -9,12 +9,12 @@ function Navbar() {
         const btnNavEl = document.querySelector('.button-navigation-mobile');
         const headerEl = document.querySelector('.header');
 
-        btnNavEl.addEventListener('click', function() {
+        btnNavEl.addEventListener('click', function () {
             headerEl.classList.toggle('nav-open');
         });
 
-        allLinks.forEach(function(link) {
-            link.addEventListener('click', function(e) {
+        allLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
                 e.preventDefault();
 
                 const href = link.getAttribute('href');
@@ -26,14 +26,14 @@ function Navbar() {
                         behavior: 'smooth',
                     });
 
-                if(href !== '#'){
+                if (href !== '#') {
                     window.location.href = href;
                 }
 
                 // Scroll to other links
                 if (href !== '#' && href.startsWith('#')) {
                     const sectionEl = document.querySelector(href);
-                    sectionEl.scrollIntoView({behavior: 'smooth'});
+                    sectionEl.scrollIntoView({ behavior: 'smooth' });
                 }
 
                 if (link.classList.contains('main-navigation-link'))
@@ -43,18 +43,18 @@ function Navbar() {
     }, []);
 
     return (
-        <header className={'header'}>
-            <a className={'logo'} href="#hero">
+        <header className="header">
+            <a className="logo" href="#hero">
                 <img src={Logo} alt=""/>
             </a>
 
-            <nav className={'main-navigation'}>
-                <ul className={'main-navigation-list'}>
-                    <li><a className={'main-navigation-link'} href="#hero">Home</a></li>
-                    <li><a className={'main-navigation-link'} href="#about">About</a></li>
-                    <li><a className={'main-navigation-link'} href="#projects">Projects</a></li>
-                    <li><a className={'main-navigation-link'} href="#github">Github</a></li>
-                    <li><a className={'main-navigation-link'} href="#contact">Contact</a></li>
+            <nav className="main-navigation">
+                <ul className="main-navigation-list">
+                    <li><a className="main-navigation-link" href="#hero">Home</a></li>
+                    <li><a className="main-navigation-link" href="#about">About</a></li>
+                    <li><a className="main-navigation-link" href="#projects">Projects</a></li>
+                    <li><a className="main-navigation-link" href="#github">Github</a></li>
+                    <li><a className="main-navigation-link" href="#contact">Contact</a></li>
 
                     <li><a className="main-navigation-link margin-right-sm navigation-cta"
                            href={require('../util/resume/Gabriel Santos.pdf')} download>
@@ -65,11 +65,11 @@ function Navbar() {
             </nav>
 
             <button className="button-navigation-mobile">
-                <div className={'icon-navigation-mobile'}>
+                <div className="icon-navigation-mobile">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
 
-                <div className={'icon-navigation-mobile'}>
+                <div className="icon-navigation-mobile">
                     <ion-icon name="close-outline"></ion-icon>
                 </div>
             </button>

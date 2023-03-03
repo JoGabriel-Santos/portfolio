@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import Logo from '../util/Logo.svg';
+import Logo from "../util/Logo.svg";
 
 function Footer() {
+
     return (
         <footer className="footer">
             <div className="container center-text">

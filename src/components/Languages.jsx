@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
 function Languages(props) {
-    const [arrayLanguages, setArrayLanguages] = useState([])
+    const [arrayLanguages, setArrayLanguages] = useState([]);
 
     useEffect(() => {
         async function fetchData() {
             await fetch(`https://api.github.com/repos/JoGabriel-Santos/${props.repository_name}/languages`)
                 .then(response => response.json())
                 .then(data => {
-                    setArrayLanguages(data)
+                    setArrayLanguages(data);
                 })
         }
 
-        fetchData()
+        fetchData();
     })
 
     return (
@@ -26,4 +26,4 @@ function Languages(props) {
     )
 }
 
-export default Languages
+export default Languages;
