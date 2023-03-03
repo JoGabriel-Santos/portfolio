@@ -12,7 +12,7 @@ function Footer() {
                         <img className="logo" src={Logo} alt=""/>
                     </a>
 
-                    <p className="copyright">Copyright &copy; 2022 by Gabriel Santos</p>
+                    <p className="copyright">Copyright &copy; 2023 by Gabriel Santos</p>
                 </div>
             </div>
         </footer>
