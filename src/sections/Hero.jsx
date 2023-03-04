@@ -15,7 +15,7 @@ function Hero() {
                     </p>
 
                     <div className="buttons-hero">
-                        <a className={'button button--full margin-right-sm'} href="/">
+                        <a className="button button--full margin-right-sm" href="/blog">
                             Visit my Blog
                         </a>
 
