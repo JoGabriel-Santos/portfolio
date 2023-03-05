@@ -509,6 +509,12 @@ section {
     text-transform: uppercase;
 }
 
+/* ----- Blog ----- */
+
+.section-blog {
+    padding: 9.6rem 0;
+}
+
 /* ----- Contact ----- */
 
 .contact {
