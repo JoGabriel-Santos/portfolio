@@ -11,7 +11,8 @@ function Hero() {
                     </h1>
 
                     <p className="hero-description">
-                        I am a Computer Scientist seeking new opportunities to apply the knowledge I acquired during my academic studies.
+                        As a Computer Scientist, I am actively seeking fresh opportunities to
+                        utilize the knowledge and skills gained through my academic studies.
                     </p>
 
                     <div className="buttons-hero">
@@ -27,32 +28,36 @@ function Hero() {
                 </div>
             </div>
 
-            <div className="hero-socials">
-                <ul className="socials">
+            <div className="container-links" id="socials">
+                <ul className="links-list">
                     <li className="socials-icon">
                         <a href="https://api.whatsapp.com/send?phone=5598981688750">
-                            <ion-icon name="logo-whatsapp"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li className="socials-icon">
-                        <a href="https://www.instagram.com/jogabriel_santos/">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li className="socials-icon">
-                        <a href="https://www.linkedin.com/in/jogabriel-santos/">
-                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <img className="whatsapp" src={require("../util/socials/whatsapp.png")} alt=""/>
                         </a>
                     </li>
 
                     <li className="socials-icon">
                         <a href="https://github.com/JoGabriel-Santos">
-                            <ion-icon name="logo-github"></ion-icon>
+                            <img src={require("../util/socials/github.png")} alt=""/>
+                        </a>
+                    </li>
+
+                    <li className="socials-icon">
+                        <a href="https://www.linkedin.com/in/jogabriel-santos/">
+                            <img src={require("../util/socials/linkedin.png")} alt=""/>
                         </a>
                     </li>
                 </ul>
+            </div>
+
+            <div className="container-socials-email" id="socials">
+                <div className="socials-email">
+                    <a className="main-navigation-link"
+                       href="mailto: jgabriel.professional@gmail.com">
+
+                        <p className="email">jgabriel.professional@gmail.com</p>
+                    </a>
+                </div>
             </div>
 
             <div className="arrow-down">

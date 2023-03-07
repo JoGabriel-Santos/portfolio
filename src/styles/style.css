@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -13,8 +13,8 @@ a {
 
 body {
     background-color: #090e16;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
     line-height: 1;
 }
 
@@ -52,7 +52,7 @@ section {
     cursor: pointer;
     display: inline-block;
     font-family: inherit;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 600;
     padding: 1.6rem 3.2rem;
     text-decoration: none;
@@ -162,7 +162,7 @@ section {
 
 .header {
     align-items: center;
-    box-shadow: rgba(100, 100, 111, 0.45) 0 0 10px 0;
+    box-shadow: rgba(100, 100, 111, 0.15) 0 0 10px 0;
     backdrop-filter: blur(10px);
     background-color: rgba(9, 14, 22, 0.7);
     display: flex;
@@ -219,7 +219,7 @@ section {
     border-radius: 5px;
     color: #ffffff;
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
     text-decoration: none;
     transition: all 0.3s;
@@ -264,42 +264,105 @@ section {
 
 .hero-description {
     color: #ffffff;
-    font-size: 2.3rem;
+    font-size: 2.6rem;
     line-height: 1.6;
     margin-bottom: 4.8rem;
 }
 
-.hero-socials {
-    border-radius: 9px;
-    box-shadow: rgba(100, 100, 111, 0.45) 0 0 10px 0;
-    color: #ffffff;
-    font-size: 2.8rem;
-    margin-left: 1rem;
-    overflow: hidden;
-    padding: 0.3rem;
+.container-links {
+    bottom: 0;
+    left: 40px;
     position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
+    width: 40px;
+    z-index: 10;
 }
 
-.hero-socials ul {
+.links-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links-list::after {
+    background-color: white;
+    content: "";
+    display: block;
+    height: 90px;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 1px;
+}
+
+.links-list li {
+    display: block;
+}
+
+.links-list li a {
+    justify-content: center;
+    background-color: inherit;
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
 }
 
 .socials-icon {
     border-radius: 9px;
-    padding: 1rem;
+    font-size: 2.2rem;
     transition: all 0.3s;
 }
 
-.socials-icon:hover {
-    box-shadow: 0 0 0 3px #fff;
-    cursor: pointer;
+.socials-icon:last-child {
+    margin-bottom: 15px;
 }
 
-.socials-icon ion-icon {
-    color: #ffffff;
+.socials-icon:hover {
+    cursor: pointer;
+    transform: translateY(-5%);
+}
+
+.socials-icon img {
     padding-top: 0.4rem;
+    width: 30px;
+}
+
+.container-socials-email {
+    bottom: 0;
+    left: auto;
+    position: fixed;
+    right: 40px;
+    width: 40px;
+    z-index: 10;
+}
+
+.socials-email {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    -webkit-box-align: center;
+}
+
+.socials-email a {
+    letter-spacing: 2px;
+    margin: 20px auto;
+    padding: 10px;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+}
+
+.socials-email::after {
+    background-color: white;
+    content: "";
+    display: block;
+    height: 90px;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 1px;
+}
+
+.email {
+    font-size: 1.9rem;
+    font-weight: 300;
 }
 
 .arrow-down {
@@ -322,6 +385,19 @@ section {
     cursor: pointer;
 }
 
+#socials {
+    animation: animation 0.5s ease;
+}
+
+@keyframes animation {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 /* ----- About ----- */
 
 .subheading {
@@ -337,12 +413,13 @@ section {
 .about-description {
     color: #ffffff;
     font-size: 2.2rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.6;
     text-align: justify;
 }
 
 .about-description-text {
+    font-size: 2.2rem;
     padding: 1rem 0;
 }
 
@@ -355,7 +432,7 @@ section {
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .skill-name {
@@ -376,7 +453,7 @@ section {
 }
 
 .grid-projects-padding {
-    padding: 9.6rem 3.2rem;
+    padding: 9.6rem 4rem;
 }
 
 .step-number {
@@ -397,7 +474,7 @@ section {
 
 .step-description {
     color: #ffffff;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
     line-height: 1.6;
 }

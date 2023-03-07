@@ -1,8 +1,21 @@
 /* Below 1595px (Smaller desktops) */
 
 @media (max-width: 1595px) {
-    .hero-socials {
-        position: absolute;
+    .container-links {
+        bottom: 0;
+        left: 4px;
+        position: fixed;
+        width: 40px;
+        z-index: 10;
+    }
+
+    .container-socials-email {
+        bottom: 0;
+        left: auto;
+        position: fixed;
+        right: 2px;
+        width: 40px;
+        z-index: 10;
     }
 }
 
@@ -12,6 +25,10 @@
     html {
         font-size: 56.25%;
     }
+
+    .grid-projects-padding {
+        padding: 9.6rem 4.8rem;
+    }
 }
 
 /* Below 1230px (Landscape tablets) */
@@ -20,6 +37,10 @@
     html {
         font-size: 50%;
     }
+
+    .grid-projects-padding {
+        padding: 9.6rem 5.5rem;
+    }
 }
 
 /* Below 998 (Tablets) */
@@ -27,6 +48,11 @@
 @media (max-width: 998px) {
     section {
         padding: 9.6rem 7.2rem;;
+    }
+
+    .container-links,
+    .container-socials-email {
+        display: none;
     }
 
     .grid--3-cols,
@@ -54,6 +80,11 @@
 
     .heading-tertiary {
         font-size: 4rem;
+    }
+
+    .main-navigation-link:link,
+    .main-navigation-link:visited {
+        font-size: 1.8rem;
     }
 
     .step-description {
@@ -123,6 +154,11 @@
 
     .nav-open .icon-navigation-mobile ion-icon[name="menu-outline"] {
         display: none;
+    }
+
+    .show-socials {
+        display: block !important;
+        z-index: 9999;
     }
 
     .skill img {

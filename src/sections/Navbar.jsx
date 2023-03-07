@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-import { useHistory, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import Logo from "../util/Logo.svg";
 
 function Navbar() {
 
-    const history = useHistory();
     const location = useLocation();
 
     useEffect(() => {
@@ -13,8 +12,14 @@ function Navbar() {
         const btnNavEl = document.querySelector('.button-navigation-mobile');
         const headerEl = document.querySelector('.header');
 
+        const socials_left = document.querySelector('.container-links');
+        const socials_right = document.querySelector('.container-socials-email');
+
         btnNavEl.addEventListener('click', function () {
             headerEl.classList.toggle('nav-open');
+
+            socials_left.classList.toggle('show-socials');
+            socials_right.classList.toggle('show-socials');
         });
 
         allLinks.forEach(function (link) {
@@ -47,7 +52,7 @@ function Navbar() {
     }, []);
 
     return (
-        <header className="header">
+        <header className="header" id="header">
             <a className="logo" href="#hero">
                 <img src={Logo} alt=""/>
             </a>
@@ -78,9 +83,10 @@ function Navbar() {
                                 <li><a className="main-navigation-link" href="#hero-blog">Home</a></li>
                                 <li><a className="main-navigation-link" href="#projects-blog">Projects</a></li>
 
-                                <li><a className="main-navigation-link margin-right-sm navigation-cta" href="/">
+                                <li><a className="main-navigation-link margin-right-sm navigation-cta"
+                                       href={require('../util/resume/Gabriel Santos.pdf')} download>
 
-                                    Back to portfolio
+                                    Download resume
                                 </a></li>
                             </React.Fragment>
                     }

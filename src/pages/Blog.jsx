@@ -29,8 +29,8 @@ function Blog() {
 
                         <div className="buttons-hero">
                             <a className="button button--full margin-right-sm"
-                               href="https://github.com/JoGabriel-Santos/">
-                                Visit my Github
+                               href="/">
+                                Back to portfolio
                             </a>
 
                             <a className="button button--outline"

@@ -25,9 +25,7 @@ function Projects() {
                     </a>
 
                     <p className="step-description">
-                        This project was built using the MERN Stack:
-
-                        MongoDB / Express / React / NodeJS
+                        The MERN Stack, which stands for MongoDB, Express, React, and NodeJS, was utilized to develop this project
                     </p>
 
                     <div className="technology-used">
@@ -64,9 +62,8 @@ function Projects() {
                     </a>
 
                     <p className="step-description">
-                        Fast food restaurant website built with HTML and CSS.
-                        Project developed to obtain a grade on Web Development
-                        discipline
+                        An HTML and CSS-based website for a fast food restaurant was created as a
+                        project to fulfill the requirements of a Web Development discipline
                     </p>
 
                     <div className="technology-used">
@@ -88,9 +85,7 @@ function Projects() {
                     </a>
 
                     <p className="step-description">
-                        A monocycle CPU based on MIPS instruction set.
-                        Project developed to obtain a grade on Computer
-                        Architecture discipline
+                        A CPU designed with a MIPS instruction set that operates on a monocycle architecture
                     </p>
 
                     <div className="technology-used">
