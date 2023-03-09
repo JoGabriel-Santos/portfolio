@@ -9,7 +9,7 @@
         z-index: 10;
     }
 
-    .container-socials-email {
+    .container-email {
         bottom: 0;
         left: auto;
         position: fixed;
@@ -51,7 +51,7 @@
     }
 
     .container-links,
-    .container-socials-email {
+    .container-email {
         display: none;
     }
 

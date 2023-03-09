@@ -15,7 +15,7 @@ function Github() {
         }
 
         fetchData();
-    })
+    }, [])
 
     function formattedRepoDate(date) {
         const newDate = date.substring(0, 10);
@@ -45,7 +45,7 @@ function Github() {
                                 <div className="github-projects-content">
                                     <p className="github-projects-title">{repository.name}</p>
 
-                                    <p className="github-projects-last-update">last update: {formattedRepoDate(repository.updated_at)}</p>
+                                    <p className="github-projects-last-update">created at: {formattedRepoDate(repository.pushed_at)}</p>
 
                                     <div className="github-projects-tags">
                                         <Languages repository_name={repository.name}/>

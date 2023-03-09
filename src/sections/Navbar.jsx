@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 
 import Logo from "../util/Logo.svg";
 
 function Navbar() {
 
+    const listRef = useRef(null);
     const location = useLocation();
 
     useEffect(() => {
@@ -13,7 +14,7 @@ function Navbar() {
         const headerEl = document.querySelector('.header');
 
         const socials_left = document.querySelector('.container-links');
-        const socials_right = document.querySelector('.container-socials-email');
+        const socials_right = document.querySelector('.container-email');
 
         btnNavEl.addEventListener('click', function () {
             headerEl.classList.toggle('nav-open');
@@ -49,22 +50,45 @@ function Navbar() {
                     headerEl.classList.toggle('nav-open');
             });
         });
+
+        animateListItems();
     }, []);
+
+    const animateListItems = () => {
+        const listItems = listRef.current.querySelectorAll('li');
+        let index = 0;
+
+        const animateNextListItem = () => {
+            if (index < listItems.length) {
+                const currentItem = listItems[index];
+                currentItem.classList.add('animation');
+                currentItem.classList.add('main-navigation-link--opacity');
+
+                setTimeout(() => {
+                    currentItem.classList.remove('animation');
+                    index++;
+                    animateNextListItem();
+                }, 200);
+            }
+        };
+
+        animateNextListItem();
+    };
 
     return (
         <header className="header" id="header">
-            <a className="logo" href="#hero">
+            <a className="logo animation" href="#hero">
                 <img src={Logo} alt=""/>
             </a>
 
             <nav className="main-navigation">
-                <ul className="main-navigation-list">
+                <ul className="main-navigation-list" ref={listRef}>
 
                     {
                         location.pathname === "/" ?
 
                             <React.Fragment>
-                                <li><a className="main-navigation-link" href="#hero">Home</a></li>
+                                <li><a className="main-navigation-link animation" href="#hero">Home</a></li>
                                 <li><a className="main-navigation-link" href="#about">About</a></li>
                                 <li><a className="main-navigation-link" href="#projects">Projects</a></li>
                                 <li><a className="main-navigation-link" href="#github">Github</a></li>

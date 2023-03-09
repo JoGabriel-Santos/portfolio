@@ -55,6 +55,7 @@ section {
     font-size: 2.2rem;
     font-weight: 600;
     padding: 1.6rem 3.2rem;
+    text-align: center;
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -125,9 +126,9 @@ section {
 }
 
 .heading-primary {
-    font-size: 5.2rem;
+    font-size: 8rem;
     line-height: 1.05;
-    margin-bottom: 3.2rem;
+    margin-bottom: 3rem;
 }
 
 .heading-secondary {
@@ -156,6 +157,26 @@ section {
 
 .margin-right-sm {
     margin-right: 1rem;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.section-animation {
+    animation: fadeInDown 0.5s ease-in forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* -----Header ----- */
@@ -214,6 +235,28 @@ section {
     list-style: none;
 }
 
+.main-navigation-list li {
+    opacity: 0;
+}
+
+.main-navigation-link--opacity {
+    opacity: 1 !important;
+}
+
+.animation {
+    animation: linksAnim 0.2s ease forwards;
+}
+
+@keyframes linksAnim {
+    0% {
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 .main-navigation-link:link,
 .main-navigation-link:visited {
     border-radius: 5px;
@@ -256,17 +299,34 @@ section {
 .hero {
     display: flex;
     margin: auto;
-    max-width: 100rem;
+    max-width: 90rem;
     padding: 0 4.2rem;
     position: relative;
-    text-align: center;
+    text-align: start;
 }
 
-.hero-description {
-    color: #ffffff;
-    font-size: 2.6rem;
+.hero-paragraph {
+    color: #7b4ae2;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.hero-typing {
+    color: #8892b0;
+    display: flex;
+    font-size: 3.5rem;
+    gap: 6px;
     line-height: 1.6;
-    margin-bottom: 4.8rem;
+    margin-bottom: 2.8rem;
+}
+
+.hero-description{
+    color: #ffffff;
+    display: flex;
+    font-size: 2.2rem;
+    gap: 6px;
+    line-height: 1.6;
+    margin-bottom: 4rem;
 }
 
 .container-links {
@@ -320,12 +380,13 @@ section {
     transform: translateY(-5%);
 }
 
-.socials-icon img {
+.socials-icon svg {
+    color: white;
     padding-top: 0.4rem;
     width: 30px;
 }
 
-.container-socials-email {
+.container-email {
     bottom: 0;
     left: auto;
     position: fixed;
@@ -361,7 +422,7 @@ section {
 }
 
 .email {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
