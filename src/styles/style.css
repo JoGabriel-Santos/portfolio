@@ -160,22 +160,28 @@ section {
 }
 
 .opacity-0 {
-    opacity: 0;
+    opacity: 0 !important;
 }
 
-.section-animation {
-    animation: fadeInDown 0.5s ease-in forwards;
-    opacity: 0;
+.opacity-1 {
+    opacity: 1 !important;
 }
 
-@keyframes fadeInDown {
+/* ----- Animations -----*/
+
+.hero-animation {
+    animation: heroAnim 0.8s ease-in forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes heroAnim {
     0% {
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(50px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0px);
     }
 }
 
@@ -243,20 +249,6 @@ section {
     opacity: 1 !important;
 }
 
-.animation {
-    animation: linksAnim 0.2s ease forwards;
-}
-
-@keyframes linksAnim {
-    0% {
-        transform: translateY(-80px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
 .main-navigation-link:link,
 .main-navigation-link:visited {
     border-radius: 5px;
@@ -285,6 +277,21 @@ section {
 .main-navigation-link.navigation-cta:hover {
     background-color: #090e16;
     box-shadow: 0 0 0 3px #fff;
+}
+
+.animation-links {
+    animation: linksAnim 0.8s ease-in forwards;
+}
+
+@keyframes linksAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 /* ----- Hero ----- */
@@ -320,7 +327,7 @@ section {
     margin-bottom: 2.8rem;
 }
 
-.hero-description{
+.hero-description {
     color: #ffffff;
     display: flex;
     font-size: 2.2rem;
@@ -444,6 +451,26 @@ section {
 .arrow-down ion-icon:hover {
     box-shadow: 0 0 0 3px #fff;
     cursor: pointer;
+}
+
+.fadeUp {
+    opacity: 0;
+}
+
+.section-animation, .section-animation--hero {
+    animation: fadeInDown 0.5s ease-in forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #socials {
@@ -676,7 +703,7 @@ section {
 .copyright {
     color: #767676;
     font-size: 1.4rem;
-    margin-top: auto;
+    margin-bottom: 3rem;
     line-height: 1.6;
 }
 

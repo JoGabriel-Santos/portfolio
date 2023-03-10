@@ -61,14 +61,13 @@ function Navbar() {
         const animateNextListItem = () => {
             if (index < listItems.length) {
                 const currentItem = listItems[index];
-                currentItem.classList.add('animation');
-                currentItem.classList.add('main-navigation-link--opacity');
+                currentItem.classList.add("animation-links");
 
                 setTimeout(() => {
-                    currentItem.classList.remove('animation');
+
                     index++;
                     animateNextListItem();
-                }, 200);
+                }, 100);
             }
         };
 
@@ -77,7 +76,7 @@ function Navbar() {
 
     return (
         <header className="header" id="header">
-            <a className="logo animation" href="#hero">
+            <a className="logo animation-links" href="#hero">
                 <img src={Logo} alt=""/>
             </a>
 
@@ -88,7 +87,7 @@ function Navbar() {
                         location.pathname === "/" ?
 
                             <React.Fragment>
-                                <li><a className="main-navigation-link animation" href="#hero">Home</a></li>
+                                <li><a className="main-navigation-link animation-links" href="#hero">Home</a></li>
                                 <li><a className="main-navigation-link" href="#about">About</a></li>
                                 <li><a className="main-navigation-link" href="#projects">Projects</a></li>
                                 <li><a className="main-navigation-link" href="#github">Github</a></li>

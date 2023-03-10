@@ -232,6 +232,12 @@
     .step-description {
         font-size: 2.2rem;
     }
+
+    .section-animation--hero {
+        animation: none;
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* Below 542px (Phones) */
@@ -258,5 +264,11 @@
 
     .margin-right-sm {
         margin: 0;
+    }
+
+    .section-animation--hero {
+        animation: none;
+        transform: translateY(0);
+        opacity: 1;
     }
 }

@@ -1,23 +1,50 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 import Typing from "react-typing-effect";
 
 function Hero() {
 
+    const listRef = useRef(null);
+
+    useEffect(() => {
+
+        animateListItems();
+    }, []);
+
+    const animateListItems = () => {
+        const listItems = listRef.current.querySelectorAll('.fadeUp');
+        let index = 0;
+
+        const animateNextListItem = () => {
+            if (index < listItems.length) {
+                const currentItem = listItems[index];
+                currentItem.classList.add("opacity-1");
+                currentItem.classList.add("hero-animation");
+
+                setTimeout(() => {
+                    index++;
+                    animateNextListItem();
+                }, 100);
+            }
+        };
+
+        animateNextListItem();
+    };
+
     return (
         <section className="section-hero" id="hero">
-            <div className="hero section-animation">
-                <div className="hero-text-box">
+            <div className="hero">
+                <div className="hero-text-box" ref={listRef}>
 
-                    <p className="hero-paragraph">
+                    <p className="hero-paragraph fadeUp">
                         Hey, my name is
                     </p>
 
-                    <h1 className="heading-primary">
+                    <h1 className="heading-primary fadeUp">
                         Gabriel Santos
                     </h1>
 
-                    <p className="hero-typing">
+                    <p className="hero-typing fadeUp">
                         <p>I build things with</p>
                         <Typing
                             text={['ReactJS', 'NodeJS', 'MongoDB', 'MySQL', 'JavaScript', 'TypeScript', 'Java', 'Python']}
@@ -25,12 +52,12 @@ function Hero() {
                         />
                     </p>
 
-                    <p className="hero-description">
+                    <p className="hero-description fadeUp">
                         As a Computer Scientist, I am actively seeking fresh opportunities to
                         utilize the knowledge and skills gained through my academic studies.
                     </p>
 
-                    <div className="buttons-hero">
+                    <div className="buttons-hero fadeUp">
                         <a className="button button--full margin-right-sm" href="/blog">
                             Visit my Blog
                         </a>

@@ -27,8 +27,6 @@ function Projects() {
             if (index < listItems.length) {
                 const currentItem = listItems[index];
 
-                console.log(currentItem)
-
                 setTimeout(() => {
                     currentItem.classList.remove('animation');
                     index++;
