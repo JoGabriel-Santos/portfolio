@@ -18,7 +18,6 @@ function Hero() {
         const animateNextListItem = () => {
             if (index < listItems.length) {
                 const currentItem = listItems[index];
-                currentItem.classList.add("opacity-1");
                 currentItem.classList.add("hero-animation");
 
                 setTimeout(() => {
@@ -44,13 +43,13 @@ function Hero() {
                         Gabriel Santos
                     </h1>
 
-                    <p className="hero-typing fadeUp">
-                        <p>I build things with</p>
+                    <span className="hero-typing fadeUp">
+                        I build things with
                         <Typing
                             text={['ReactJS', 'NodeJS', 'MongoDB', 'MySQL', 'JavaScript', 'TypeScript', 'Java', 'Python']}
                             speed={200} eraseSpeed={100} eraseDelay={2500} typingDelay={500}
                         />
-                    </p>
+                    </span>
 
                     <p className="hero-description fadeUp">
                         As a Computer Scientist, I am actively seeking fresh opportunities to

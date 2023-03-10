@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import VisibilitySensor from "react-visibility-sensor";
 
 function About() {
+
+    const listRef = useRef(null);
 
     const [isVisible, setIsVisible] = useState(false);
     const [alreadyShowed, setAlreadyShowed] = useState(false);
@@ -11,6 +13,30 @@ function About() {
         setIsVisible(true);
         setAlreadyShowed(true);
     };
+
+    const animateListItems = () => {
+        const listItems = listRef.current.querySelectorAll('.skill');
+        let index = 0;
+
+        const animateNextListItem = () => {
+            if (index < listItems.length) {
+                const currentItem = listItems[index];
+                currentItem.classList.add("about-animation");
+
+                setTimeout(() => {
+                    index++;
+                    animateNextListItem();
+                }, 100);
+            }
+        };
+
+        animateNextListItem();
+    };
+
+    useEffect(() => {
+        if (alreadyShowed) animateListItems();
+
+    }, [alreadyShowed])
 
     return (
         <VisibilitySensor partialVisibility={0.8} onChange={!alreadyShowed && setIsVisible}>
@@ -32,22 +58,24 @@ function About() {
                     <div className="about-description">
 
                         <p className="about-description-text">
-                            I'm a <b>Full Stack Web Developer</b> who constantly seeks out
-                            work opportunities where I can contribute, learn and grow.
+                            Hello, my name is Gabriel Santos, and I am a Full Stack Web Developer with a passion for crafting
+                            beautiful and functional web applications. In 2016, I embarked on a journey into the world of
+                            development by enrolling in a Computer Technician course.
                         </p>
 
                         <p className="about-description-text">
-                            My interest in development started in 2016 when I decided to join
-                            the Computer Technician course, and now I am graduating in <b>Computer Science</b>.
+                            I am currently pursuing a degree in Computer Science, where I have gained a strong foundation
+                            in programming languages, algorithms, and data structures. I am continually expanding my knowledge
+                            by staying up-to-date with the latest industry trends and learning new technologies,
+                            with a particular focus on ReactJs at the moment.
                         </p>
 
                         <p className="about-description-text">
-                            I am presently expanding my knowledge of <b>ReactJs</b>, developing real world projects.
                             Feel free to explore some of my completed <a href="#projects"><b>projects</b></a> below.
                         </p>
                     </div>
 
-                    <div className="about-skills grid grid--4-cols">
+                    <div className="about-skills grid grid--4-cols" ref={listRef}>
                         <div className="skill">
                             <img src={require('../util/icons/icons8-javascript-96.png')} alt=""/>
                             <p className="skill-name">JavaScript</p>

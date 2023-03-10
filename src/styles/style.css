@@ -78,7 +78,7 @@ section {
 .button--outline:visited {
     background-color: #fff;
     color: #555;
-    width: 26rem;
+    width: 25rem;
 }
 
 .button--outline:active,
@@ -165,24 +165,6 @@ section {
 
 .opacity-1 {
     opacity: 1 !important;
-}
-
-/* ----- Animations -----*/
-
-.hero-animation {
-    animation: heroAnim 0.8s ease-in forwards;
-    animation-timing-function: ease;
-}
-
-@keyframes heroAnim {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
 }
 
 /* -----Header ----- */
@@ -457,6 +439,21 @@ section {
     opacity: 0;
 }
 
+.hero-animation {
+    animation: heroAnim 0.6s ease forwards;
+}
+
+@keyframes heroAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 .section-animation, .section-animation--hero {
     animation: fadeInDown 0.5s ease-in forwards;
     opacity: 0;
@@ -465,7 +462,7 @@ section {
 @keyframes fadeInDown {
     0% {
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(300px);
     }
     100% {
         opacity: 1;
@@ -502,8 +499,7 @@ section {
     color: #ffffff;
     font-size: 2.2rem;
     font-weight: 400;
-    line-height: 1.6;
-    text-align: justify;
+    line-height: 1.4;
 }
 
 .about-description-text {
@@ -521,10 +517,27 @@ section {
     display: flex;
     flex-direction: column;
     font-size: 1.6rem;
+    opacity: 0;
 }
 
 .skill-name {
     padding-top: 1.2rem;
+}
+
+.about-animation {
+    animation: aboutAnim 0.8s ease-in forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes aboutAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 /* ----- Projects ----- */
@@ -622,6 +635,36 @@ section {
 .technology-used {
     color: #ffffff;
     font-size: 2.6rem;
+}
+
+.left-right-animation {
+    animation: leftRight-animation 1s ease forwards;
+}
+
+@keyframes leftRight-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.right-left-animation {
+    animation: rightLeft-animation 1s ease forwards;
+}
+
+@keyframes rightLeft-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 /* ----- Github ----- */
