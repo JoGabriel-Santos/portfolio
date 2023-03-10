@@ -1,6 +1,6 @@
 import React from "react";
 
-import Typing from 'react-typing-effect';
+import Typing from "react-typing-effect";
 
 function Hero() {
 
@@ -10,7 +10,7 @@ function Hero() {
                 <div className="hero-text-box">
 
                     <p className="hero-paragraph">
-                        Hi, my name is
+                        Hey, my name is
                     </p>
 
                     <h1 className="heading-primary">

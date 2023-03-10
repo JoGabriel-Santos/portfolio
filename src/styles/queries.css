@@ -248,8 +248,12 @@
     .buttons-hero {
         align-items: center;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
+    }
+
+    .header {
+        height: 8.8rem;
     }
 
     .margin-right-sm {

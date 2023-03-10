@@ -64,7 +64,7 @@ section {
 .button--full:visited {
     background-color: #7b4ae2;
     color: #fff;
-    width: 26rem;
+    width: 25rem;
 }
 
 .button--full:active,

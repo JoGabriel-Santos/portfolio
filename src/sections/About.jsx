@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 
-import VisibilitySensor from 'react-visibility-sensor';
+import VisibilitySensor from "react-visibility-sensor";
 
 function About() {
 
     const [isVisible, setIsVisible] = useState(false);
+    const [alreadyShowed, setAlreadyShowed] = useState(false);
 
     const onAnimationEnd = () => {
         setIsVisible(true);
+        setAlreadyShowed(true);
     };
 
     return (
-        <VisibilitySensor partialVisibility={0.8} onChange={setIsVisible}>
+        <VisibilitySensor partialVisibility={0.8} onChange={!alreadyShowed && setIsVisible}>
             <section
                 className={`section-about ${isVisible ? "section-animation" : "opacity-0"}`}
                 onAnimationEnd={onAnimationEnd} id="about">
@@ -22,7 +24,7 @@ function About() {
                     </span>
 
                     <h2 className="heading-secondary">
-                        Here you will find more information about me
+                        Here, you can discover additional details about myself
                     </h2>
                 </div>
 
@@ -40,8 +42,8 @@ function About() {
                         </p>
 
                         <p className="about-description-text">
-                            I'm currently learning <b>ReactJs</b>, developing real world projects.
-                            Check out some of my work in the <a href="#projects"><b>Projects</b></a> section.
+                            I am presently expanding my knowledge of <b>ReactJs</b>, developing real world projects.
+                            Feel free to explore some of my completed <a href="#projects"><b>projects</b></a> below.
                         </p>
                     </div>
 

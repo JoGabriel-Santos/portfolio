@@ -1,9 +1,19 @@
 import React, { useEffect, useState } from "react";
 
+import VisibilitySensor from "react-visibility-sensor";
+
 import Languages from "../components/Languages";
 
 function Github() {
     const [arrayRepositories, setArrayRepositories] = useState([]);
+
+    const [isVisible, setIsVisible] = useState(false);
+    const [alreadyShowed, setAlreadyShowed] = useState(false);
+
+    const onAnimationEnd = () => {
+        setIsVisible(true);
+        setAlreadyShowed(true);
+    };
 
     useEffect(() => {
         async function fetchData() {
@@ -24,40 +34,45 @@ function Github() {
     }
 
     return (
-        <section className="section-github" id="github">
-            <div className="container center-text">
+        <VisibilitySensor partialVisibility={0.8} onChange={!alreadyShowed && setIsVisible}>
+            <section
+                className={`section-github ${isVisible ? "section-animation" : "opacity-0"}`}
+                onAnimationEnd={onAnimationEnd} id="github">
+
+                <div className="container center-text">
                 <span className="subheading">
                     More projects below
                 </span>
 
-                <h2 className="heading-secondary">
-                    Other Github projects
-                </h2>
-            </div>
+                    <h2 className="heading-secondary">
+                        Other Github projects
+                    </h2>
+                </div>
 
-            <div className="container grid grid-github grid--3-cols margin-bottom-md">
+                <div className="container grid grid-github grid--3-cols margin-bottom-md">
 
-                {
-                    arrayRepositories.map((repository, index) => (
+                    {
+                        arrayRepositories.map((repository, index) => (
 
-                        <div className="github-projects" key={index}>
-                            <a href={repository.html_url} target="_blank" rel="noreferrer">
-                                <div className="github-projects-content">
-                                    <p className="github-projects-title">{repository.name}</p>
+                            <div className="github-projects" key={index}>
+                                <a href={repository.html_url} target="_blank" rel="noreferrer">
+                                    <div className="github-projects-content">
+                                        <p className="github-projects-title">{repository.name}</p>
 
-                                    <p className="github-projects-last-update">created at: {formattedRepoDate(repository.pushed_at)}</p>
+                                        <p className="github-projects-last-update">created at: {formattedRepoDate(repository.pushed_at)}</p>
 
-                                    <div className="github-projects-tags">
-                                        <Languages repository_name={repository.name}/>
+                                        <div className="github-projects-tags">
+                                            <Languages repository_name={repository.name}/>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                    ))
-                }
+                                </a>
+                            </div>
+                        ))
+                    }
 
-            </div>
-        </section>
+                </div>
+            </section>
+        </VisibilitySensor>
     );
 }
 
