@@ -524,7 +524,7 @@ section {
     padding-top: 1.2rem;
 }
 
-.about-animation {
+.up-animation {
     animation: aboutAnim 0.8s ease-in forwards;
     animation-timing-function: ease;
 }
@@ -677,6 +677,7 @@ section {
     border-radius: 12px;
     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
     color: #616060;
+    opacity: 0;
     transition: all 0.4s;
 }
 

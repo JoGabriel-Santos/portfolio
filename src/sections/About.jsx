@@ -21,7 +21,7 @@ function About() {
         const animateNextListItem = () => {
             if (index < listItems.length) {
                 const currentItem = listItems[index];
-                currentItem.classList.add("about-animation");
+                currentItem.classList.add("up-animation");
 
                 setTimeout(() => {
                     index++;

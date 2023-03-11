@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import VisibilitySensor from "react-visibility-sensor";
 
 import Languages from "../components/Languages";
 
 function Github() {
+    const listRef = useRef(null);
+
     const [arrayRepositories, setArrayRepositories] = useState([]);
 
     const [isVisible, setIsVisible] = useState(false);
@@ -33,6 +35,30 @@ function Github() {
         return newDate.split('-').reverse().join(' / ');
     }
 
+    const animateListItems = () => {
+        const listItems = listRef.current.querySelectorAll('.github-projects');
+        let index = 0;
+
+        const animateNextListItem = () => {
+            if (index < listItems.length) {
+                const currentItem = listItems[index];
+                currentItem.classList.add("up-animation");
+
+                setTimeout(() => {
+                    index++;
+                    animateNextListItem();
+                }, 100);
+            }
+        };
+
+        animateNextListItem();
+    };
+
+    useEffect(() => {
+        if (alreadyShowed) animateListItems();
+
+    }, [alreadyShowed])
+
     return (
         <VisibilitySensor partialVisibility={0.8} onChange={!alreadyShowed && setIsVisible}>
             <section
@@ -49,7 +75,7 @@ function Github() {
                     </h2>
                 </div>
 
-                <div className="container grid grid-github grid--3-cols margin-bottom-md">
+                <div className="container grid grid-github grid--3-cols margin-bottom-md" ref={listRef}>
 
                     {
                         arrayRepositories.map((repository, index) => (
