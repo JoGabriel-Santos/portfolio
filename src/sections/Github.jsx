@@ -85,7 +85,7 @@ function Github() {
                                     <div className="github-projects-content">
                                         <p className="github-projects-title">{repository.name}</p>
 
-                                        <p className="github-projects-last-update">created at: {formattedRepoDate(repository.pushed_at)}</p>
+                                        <p className="github-projects-last-update">created at: {formattedRepoDate(repository.created_at)}</p>
 
                                         <div className="github-projects-tags">
                                             <Languages repository_name={repository.name}/>
