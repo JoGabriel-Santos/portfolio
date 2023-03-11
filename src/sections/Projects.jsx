@@ -109,6 +109,7 @@ function Projects() {
                                     <div className="technology-used">
                                         <i className="bi bi-filetype-html"></i>
                                         <i className="bi bi-filetype-css"></i>
+                                        <i className="bi bi-filetype-php"></i>
                                     </div>
                                 </div>
                             </div>
