@@ -272,3 +272,51 @@
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 998px) {
+    .section-animation, .section-animation--hero {
+        animation: fadeInDown 0.5s ease forwards;
+        opacity: 0;
+    }
+
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .left-right-animation {
+        animation: leftRight-animation 0.5s ease forwards;
+    }
+
+    @keyframes leftRight-animation {
+        0% {
+            opacity: 0;
+            transform: translateX(-5%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+
+    .right-left-animation {
+        animation: rightLeft-animation 0.5s ease forwards;
+    }
+
+    @keyframes rightLeft-animation {
+        0% {
+            opacity: 0;
+            transform: translateX(5%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+}
