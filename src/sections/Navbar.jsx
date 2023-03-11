@@ -46,8 +46,12 @@ function Navbar() {
                     sectionEl.scrollIntoView({ behavior: 'smooth' });
                 }
 
-                if (link.classList.contains('main-navigation-link'))
+                if (link.classList.contains('main-navigation-link')) {
                     headerEl.classList.toggle('nav-open');
+
+                    socials_left.classList.toggle('show-socials');
+                    socials_right.classList.toggle('show-socials');
+                }
             });
         });
 
@@ -87,7 +91,7 @@ function Navbar() {
                         location.pathname === "/" ?
 
                             <React.Fragment>
-                                <li><a className="main-navigation-link animation-links" href="#hero">Home</a></li>
+                                <li><a className="main-navigation-link" href="#hero">Home</a></li>
                                 <li><a className="main-navigation-link" href="#about">About</a></li>
                                 <li><a className="main-navigation-link" href="#projects">Projects</a></li>
                                 <li><a className="main-navigation-link" href="#github">Github</a></li>
