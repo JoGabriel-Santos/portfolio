@@ -38,6 +38,10 @@ html {
     scroll-behavior: smooth;
 }
 
+li {
+    list-style-type: none;
+}
+
 section {
     padding: 9.6rem 4.2rem;
 }
