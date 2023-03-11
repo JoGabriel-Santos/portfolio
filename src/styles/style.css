@@ -462,7 +462,7 @@ section {
 @keyframes fadeInDown {
     0% {
         opacity: 0;
-        transform: translateY(300px);
+        transform: translateY(125px);
     }
     100% {
         opacity: 1;
