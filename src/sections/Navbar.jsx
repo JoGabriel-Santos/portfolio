@@ -110,10 +110,9 @@ function Navbar() {
                                 <li><a className="main-navigation-link" href="#hero-blog">Home</a></li>
                                 <li><a className="main-navigation-link" href="#projects-blog">Projects</a></li>
 
-                                <li><a className="main-navigation-link margin-right-sm navigation-cta"
-                                       href={require('../util/resume/Gabriel Santos.pdf')} download>
+                                <li><a className="main-navigation-link margin-right-sm navigation-cta" href="/">
 
-                                    Download resume
+                                    Back to Portfolio
                                 </a></li>
                             </React.Fragment>
                     }
