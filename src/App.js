@@ -1,11 +1,11 @@
 import React from "react";
 
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-
-import Main from "./pages/Main";
-import Blog from "./pages/Blog";
-
 import Navbar from "./sections/Navbar";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Projects from "./sections/Projects";
+import Github from "./sections/Github";
+import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 
 import "../src/styles/style.css";
@@ -15,14 +15,13 @@ function App() {
 
     return (
         <React.Fragment>
-            <BrowserRouter>
-                <Navbar/>
-                <Switch>
-                    <Route path="/" exact component={Main}/>
-                    <Route path="/blog" exact component={Blog}/>
-                </Switch>
-                <Footer/>
-            </BrowserRouter>
+            <Navbar/>
+            <Hero/>
+            <About/>
+            <Projects/>
+            <Github/>
+            <Contact/>
+            <Footer/>
         </React.Fragment>
     );
 }

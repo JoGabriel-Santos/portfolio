@@ -1,12 +1,10 @@
 import React, { useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
 
 import Logo from "../util/Logo.svg";
 
 function Navbar() {
 
     const listRef = useRef(null);
-    const location = useLocation();
 
     useEffect(() => {
         const allLinks = document.querySelectorAll('a:link');
@@ -87,36 +85,17 @@ function Navbar() {
             <nav className="main-navigation">
                 <ul className="main-navigation-list" ref={listRef}>
 
-                    {
-                        location.pathname === "/" ?
+                    <li><a className="main-navigation-link" href="#hero">Home</a></li>
+                    <li><a className="main-navigation-link" href="#about">About</a></li>
+                    <li><a className="main-navigation-link" href="#projects">Projects</a></li>
+                    <li><a className="main-navigation-link" href="#github">Github</a></li>
+                    <li><a className="main-navigation-link" href="#contact">Contact</a></li>
 
-                            <React.Fragment>
-                                <li><a className="main-navigation-link" href="#hero">Home</a></li>
-                                <li><a className="main-navigation-link" href="#about">About</a></li>
-                                <li><a className="main-navigation-link" href="#projects">Projects</a></li>
-                                <li><a className="main-navigation-link" href="#github">Github</a></li>
-                                <li><a className="main-navigation-link" href="#contact">Contact</a></li>
+                    <li><a className="main-navigation-link margin-right-sm navigation-cta"
+                           href={require('../util/resume/Gabriel Santos.pdf')} download>
 
-                                <li><a className="main-navigation-link margin-right-sm navigation-cta"
-                                       href={require('../util/resume/Gabriel Santos.pdf')} download>
-
-                                    Download resume
-                                </a></li>
-                            </React.Fragment>
-
-                            :
-
-                            <React.Fragment>
-                                <li><a className="main-navigation-link" href="#hero-blog">Home</a></li>
-                                <li><a className="main-navigation-link" href="#projects-blog">Projects</a></li>
-
-                                <li><a className="main-navigation-link margin-right-sm navigation-cta" href="/">
-
-                                    Back to Portfolio
-                                </a></li>
-                            </React.Fragment>
-                    }
-
+                        Download resume
+                    </a></li>
                 </ul>
             </nav>
 
