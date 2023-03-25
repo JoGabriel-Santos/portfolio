@@ -273,6 +273,14 @@
     }
 }
 
+/* Below 424px (Phones) */
+
+@media (max-width: 424px) {
+    .buttons-hero{
+        justify-content: space-between;
+    }
+}
+
 @media screen and (max-width: 998px) {
     .section-animation, .section-animation--hero {
         animation: fadeInDown 0.5s ease forwards;
