@@ -87,13 +87,13 @@ function About() {
                         </div>
 
                         <div className="skill">
-                            <img src={require('../util/icons/icons8-java-96.png')} alt=""/>
-                            <p className="skill-name">Java</p>
+                            <img src={require('../util/icons/icons8-html-5-96.png')} alt=""/>
+                            <p className="skill-name">HTML</p>
                         </div>
 
                         <div className="skill">
-                            <img src={require('../util/icons/icons8-python-96.png')} alt=""/>
-                            <p className="skill-name">Python</p>
+                            <img src={require('../util/icons/icons8-css3-96.png')} alt=""/>
+                            <p className="skill-name">CSS</p>
                         </div>
 
                         <div className="skill">
