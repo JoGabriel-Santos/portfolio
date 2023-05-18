@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 
 import Logo from "../util/Logo.svg";
 
 function Navbar() {
 
+    const location = useLocation();
     const listRef = useRef(null);
 
     useEffect(() => {
@@ -41,7 +43,7 @@ function Navbar() {
                 // Scroll to other links
                 if (href !== '#' && href.startsWith('#')) {
                     const sectionEl = document.querySelector(href);
-                    sectionEl.scrollIntoView({ behavior: 'smooth' });
+                    sectionEl.scrollIntoView({behavior: 'smooth'});
                 }
 
                 if (link.classList.contains('main-navigation-link')) {
@@ -84,19 +86,35 @@ function Navbar() {
 
             <nav className="main-navigation">
                 <ul className="main-navigation-list" ref={listRef}>
-
-                    <li><a className="main-navigation-link" href="#hero">Home</a></li>
-                    <li><a className="main-navigation-link" href="#about">About</a></li>
-                    <li><a className="main-navigation-link" href="#projects">Projects</a></li>
-                    <li><a className="main-navigation-link" href="#github">Github</a></li>
-                    <li><a className="main-navigation-link" href="#contact">Contact</a></li>
-
-                    <li><a className="main-navigation-link margin-right-sm navigation-cta"
-                           href={require('../util/resume/Gabriel Santos.pdf')} download>
-
-                        Download resume
-                    </a></li>
+                    {
+                        location.pathname === "/" ? (
+                            <>
+                                <li><a className="main-navigation-link" href="#hero">Home</a></li>
+                                <li><a className="main-navigation-link" href="#about">About</a></li>
+                                <li><a className="main-navigation-link" href="#projects">Projects</a></li>
+                                <li><a className="main-navigation-link" href="#github">Github</a></li>
+                                <li><a className="main-navigation-link" href="#contact">Contact</a></li>
+                                <li>
+                                    <a className="main-navigation-link margin-right-sm navigation-cta"
+                                       href={require('../util/resume/Gabriel Santos.pdf')} download>
+                                        Download resume
+                                    </a>
+                                </li>
+                            </>
+                        ) : (
+                            <>
+                                <li><a className="main-navigation-link" href="#featured">Featured</a></li>
+                                <li><a className="main-navigation-link" href="#projects">Projects</a></li>
+                                <li>
+                                    <a className="main-navigation-link margin-right-sm navigation-cta" href="/">
+                                        Back to Portfolio
+                                    </a>
+                                </li>
+                            </>
+                        )
+                    }
                 </ul>
+
             </nav>
 
             <button className="button-navigation-mobile">

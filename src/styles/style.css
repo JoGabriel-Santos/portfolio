@@ -740,6 +740,77 @@ section {
     padding: 1rem 0;
 }
 
+/* ----- Blog ----- */
+
+.section-blog {
+    background-color: #090e16;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 140rem;
+    padding-top: 17.6rem;
+}
+
+.featured {
+    display: flex;
+    gap: 4rem;
+}
+
+.featured--project-image {
+    display: inline-block;
+    position: relative;
+}
+
+.button--post {
+    background-color: #7b4ae2;
+    border: 2px solid #090e16;
+    bottom: 10px;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0.8rem 1.8rem;
+    position: absolute;
+    right: 10px;
+}
+
+.featured--project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-info--title {
+
+}
+
+.technologies {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.tech {
+    color: #a071ff;
+    font-size: 1.8rem;
+}
+
+.project-title {
+    color: #ffffff;
+    font-size: 4.4rem;
+    font-weight: 400;
+}
+
+.project-description {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.button--read {
+    margin-top: auto;
+}
+
 /* ----- Footer ----- */
 
 .copyright {
@@ -755,8 +826,8 @@ section {
 }
 
 .footer-logo {
-    display: block;
     margin-bottom: 3.2rem;
+    width: fit-content;
 }
 
 .logo-column {
