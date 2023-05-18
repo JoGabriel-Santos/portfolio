@@ -10,7 +10,7 @@ function Footer() {
 
             <div className="container center-text">
                 <div className="logo-column">
-                    <a className="footer-logo" href="#">
+                    <a className="footer-logo container" href="#">
                         <img className="logo" src={Logo} alt=""/>
                     </a>
 
