@@ -57,7 +57,7 @@ function Hero() {
                     </p>
 
                     <div className="buttons-hero fadeUp">
-                        <a className="button button--full margin-right-sm" href="/blog">
+                        <a className="button button--full margin-right-sm" href="/">
                             Visit my Blog
                         </a>
 
