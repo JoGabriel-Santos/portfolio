@@ -1,6 +1,7 @@
 import React from "react";
 
 import Navbar from "../sections/Navbar";
+import Project from "../components/Project";
 
 function Blog() {
 
@@ -12,10 +13,6 @@ function Blog() {
                 <div className="featured">
                     <div className="featured--project-image">
                         <img className="step-image" src={require('../util/projects/mips.jpg')} alt=""/>
-
-                        <button className="button button--post">
-                            FEATURED POST
-                        </button>
                     </div>
 
                     <div className="featured--project-info">
@@ -42,6 +39,26 @@ function Blog() {
                         </button>
                     </div>
                 </div>
+
+                <section className="all-projects">
+
+                    <div className="project-card">
+                        <Project/>
+                    </div>
+
+                    <div className="project-card">
+                        <Project/>
+                    </div>
+
+                    <div className="project-card">
+                        <Project/>
+                    </div>
+
+                    <div className="project-card">
+                        <Project/>
+                    </div>
+
+                </section>
             </section>
         </React.Fragment>
     )

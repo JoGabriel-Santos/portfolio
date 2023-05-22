@@ -761,18 +761,6 @@ section {
     position: relative;
 }
 
-.button--post {
-    background-color: #7b4ae2;
-    border: 2px solid #090e16;
-    bottom: 10px;
-    color: white;
-    font-size: 1.8rem;
-    font-weight: 500;
-    padding: 0.8rem 1.8rem;
-    position: absolute;
-    right: 10px;
-}
-
 .featured--project-info {
     display: flex;
     flex-direction: column;
@@ -809,6 +797,35 @@ section {
 
 .button--read {
     margin-top: auto;
+}
+
+.all-projects {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5rem 0;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.project-image {
+    border-radius: 12px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.project-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 30rem;
 }
 
 /* ----- Footer ----- */
