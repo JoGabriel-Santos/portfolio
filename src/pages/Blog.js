@@ -18,9 +18,7 @@ function Blog() {
                     <div className="featured--project-info">
                         <div className="project-info--title">
                             <div className="technologies">
-                                <p className="tech">HTML</p>
-                                <p className="tech">CSS</p>
-                                <p className="tech">PHP</p>
+                                <p className="tech">JAVA</p>
                             </div>
 
                             <h2 className="project-title">MIPS Simulator</h2>
@@ -30,8 +28,6 @@ function Blog() {
                             A CPU designed with a MIPS instruction set that operates on a monocycle
                             architecture refers to a central processing unit (CPU) that follows the
                             MIPS instruction set architecture and implements a monocycle execution model.
-                            In this context, a monocycle architecture means that each instruction completes
-                            its execution within a single clock cycle.
                         </h4>
 
                         <button className="button button--read">
@@ -42,21 +38,10 @@ function Blog() {
 
                 <section className="all-projects">
 
-                    <div className="project-card">
-                        <Project/>
-                    </div>
-
-                    <div className="project-card">
-                        <Project/>
-                    </div>
-
-                    <div className="project-card">
-                        <Project/>
-                    </div>
-
-                    <div className="project-card">
-                        <Project/>
-                    </div>
+                    <Project/>
+                    <Project/>
+                    <Project/>
+                    <Project/>
 
                 </section>
             </section>

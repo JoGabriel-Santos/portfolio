@@ -767,10 +767,6 @@ section {
     gap: 20px;
 }
 
-.project-info--title {
-
-}
-
 .technologies {
     display: flex;
     gap: 16px;
@@ -802,31 +798,49 @@ section {
 .all-projects {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     padding: 5rem 0;
 }
 
 .project-card {
     background-color: #fff;
-    border-radius: 8px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-
-}
-
-.project-image {
-    border-radius: 12px;
-    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
-    cursor: pointer;
     overflow: hidden;
     transition: all 0.4s;
 }
 
-.project-image img {
-    object-fit: cover;
-    height: 100%;
-    width: 30rem;
+.project-card:hover {
+    transform: translateY(-.8rem);
 }
+
+.project-image {
+    object-fit: cover;
+}
+
+.project-content {
+    background-color: #090e16;
+    height: 180px;
+    padding: 2rem;
+}
+
+.project-content--name {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.project-content--description {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
 
 /* ----- Footer ----- */
 
