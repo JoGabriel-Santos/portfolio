@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, {useEffect, useRef} from "react";
 
 import Typing from "react-typing-effect";
 
@@ -57,12 +57,13 @@ function Hero() {
                     </p>
 
                     <div className="buttons-hero fadeUp">
-                        <a className="button button--full margin-right-sm" href="/">
-                            Visit my Blog
+                        <a className="button button--full margin-right-sm"
+                           href="https://www.linkedin.com/in/jogabriel-santos/">
+                            Visit my LinkedIn
                         </a>
 
-                        <a className="button button--outline" href="https://www.linkedin.com/in/jogabriel-santos/">
-                            See my LinkedIn
+                        <a className="button button--outline" href="https://github.com/JoGabriel-Santos">
+                            See my Github
                         </a>
                     </div>
                 </div>
@@ -104,7 +105,8 @@ function Hero() {
                                  stroke="currentColor"
                                  className="feather feather-linkedin"><title>LinkedIn</title>
 
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                                 <rect x="2" y="9" width="4" height="12"></rect>
                                 <circle cx="4" cy="4" r="2"></circle>
                             </svg>
