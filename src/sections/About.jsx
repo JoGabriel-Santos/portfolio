@@ -64,10 +64,13 @@ function About() {
                         </p>
 
                         <p className="about-description-text">
-                            I am currently pursuing a degree in Computer Science, where I have gained a strong foundation
-                            in programming languages, algorithms, and data structures. I am continually expanding my knowledge
-                            by staying up-to-date with the latest industry trends and learning new technologies,
-                            with a particular focus on ReactJs at the moment.
+                            I hold a degree in Computer Science, having successfully completed
+                            a comprehensive curriculum that equipped me with a solid understanding
+                            of programming languages, algorithms, and data structures.
+                            My academic journey has been complemented by a commitment to staying
+                            abreast of the latest industry trends and continuously
+                            acquiring new skills and knowledge. Currently, I am honing my expertise
+                            in ReactJS, demonstrating a dedicated focus on mastering this technology.
                         </p>
 
                         <p className="about-description-text">

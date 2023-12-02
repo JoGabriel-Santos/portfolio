@@ -12,7 +12,7 @@ a {
 }
 
 body {
-    background-color: #090e16;
+    background-color: #010208;
     font-family: 'Dosis', sans-serif;
     font-weight: 500;
     line-height: 1;
@@ -23,7 +23,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #090e16;
+    background: #010208;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -177,7 +177,7 @@ section {
     align-items: center;
     box-shadow: rgba(100, 100, 111, 0.15) 0 0 10px 0;
     backdrop-filter: blur(10px);
-    background-color: rgba(9, 14, 22, 0.7);
+    background-color: rgba(1, 2, 8, 0.4);
     display: flex;
     filter: alpha(opacity=80);
     height: 8rem;
@@ -283,7 +283,7 @@ section {
 /* ----- Hero ----- */
 
 .section-hero {
-    background-color: #090e16;
+    background-color: #010208;
     display: flex;
     flex-direction: column;
     height: 100vh;

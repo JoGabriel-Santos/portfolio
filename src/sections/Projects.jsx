@@ -48,26 +48,27 @@ function Projects() {
                                 <div className="step-text-box">
                                     <p className="step-number">01</p>
 
-                                    <a href="https://github.com/JoGabriel-Santos/facebook-clone" target="_blank" rel="noreferrer">
+                                    <a href="https://github.com/JoGabriel-Santos/friendly" target="_blank" rel="noreferrer">
                                         <h3 className="heading-tertiary step-tittle">
-                                            Facebook clone
+                                            Friendly
                                         </h3>
                                     </a>
 
                                     <p className="step-description">
-                                        The MERN Stack, which stands for MongoDB, Express, React, and NodeJS, was utilized to develop this project
+                                        Revolutionize communication with a global touch – Friendly, crafted with React Native, Node.js, and MongoDB,
+                                        seamlessly simulates worldwide letter exchanges, bringing a nostalgic charm to modern connectivity.
                                     </p>
 
                                     <div className="technology-used">
                                         <i className="bi bi-filetype-jsx"></i>
                                         <i className="bi bi-filetype-css"></i>
-                                        <i className="bi bi-bootstrap"></i>
+                                        <i className="bi bi-phone-fill"></i>
                                     </div>
                                 </div>
 
-                                <a href="https://github.com/JoGabriel-Santos/facebook-clone" target="_blank" rel="noreferrer">
+                                <a href="https://github.com/JoGabriel-Santos/friendly" target="_blank" rel="noreferrer">
                                     <div className="step-image-box step-image-box-text-first">
-                                        <img className="step-image" src={require('../util/projects/facebook-clone.jpg')} alt=""/>
+                                        <img className="step-image" src={require('../util/projects/friendly.png')} alt=""/>
                                     </div>
                                 </a>
                             </div>

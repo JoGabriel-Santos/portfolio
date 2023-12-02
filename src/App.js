@@ -1,10 +1,11 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Home from "./pages/Home";
-import Blog from "./pages/Blog";
+import Navbar from "./sections/Navbar";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Projects from "./sections/Projects";
+import Github from "./sections/Github";
+import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
-
 import "../src/styles/style.css";
 import "../src/styles/queries.css";
 
@@ -12,12 +13,12 @@ function App() {
 
     return (
         <React.Fragment>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/blog" element={<Blog/>}/>
-                </Routes>
-            </BrowserRouter>
+            <Navbar/>
+            <Hero/>
+            <About/>
+            <Projects/>
+            <Github/>
+            <Contact/>
             <Footer/>
         </React.Fragment>
     );
