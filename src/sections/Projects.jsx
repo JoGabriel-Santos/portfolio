@@ -85,32 +85,32 @@ function Projects() {
 
                             <div className="container grid grid--center-v grid-projects-padding grid-projects-image-first">
                                 <a className="grid-projects-img"
-                                   href="https://github.com/JoGabriel-Santos/resto"
+                                   href="https://github.com/JoGabriel-Santos/airbnb-clone"
                                    target="_blank" rel="noreferrer">
 
                                     <div className="step-image-box step-image-box-image-first">
-                                        <img className="step-image" src={require('../util/projects/resto.jpg')} alt=""/>
+                                        <img className="step-image" src={require('../util/projects/airbnb.png')} alt=""/>
                                     </div>
                                 </a>
 
                                 <div className="step-text-box">
                                     <p className="step-number">02</p>
 
-                                    <a href="https://github.com/JoGabriel-Santos/resto" target="_blank" rel="noreferrer">
+                                    <a href="https://github.com/JoGabriel-Santos/airbnb-clone" target="_blank" rel="noreferrer">
                                         <h3 className="heading-tertiary step-tittle">
-                                            Resto
+                                            Airbnb
                                         </h3>
                                     </a>
 
                                     <p className="step-description">
-                                        An HTML and CSS-based website for a fast food restaurant was created as a
-                                        project to fulfill the requirements of a Web Development discipline
+                                        I successfully developed a replica of the Airbnb website,
+                                        showcasing my proficiency in React and Node.js. This project
+                                        exemplifies my skills in creating dynamic and responsive web applications.
                                     </p>
 
                                     <div className="technology-used">
-                                        <i className="bi bi-filetype-html"></i>
+                                        <i className="bi bi-filetype-jsx"></i>
                                         <i className="bi bi-filetype-css"></i>
-                                        <i className="bi bi-filetype-php"></i>
                                     </div>
                                 </div>
                             </div>
@@ -129,25 +129,28 @@ function Projects() {
                                 <div className="step-text-box">
                                     <p className="step-number">03</p>
 
-                                    <a href="https://github.com/JoGabriel-Santos/mips-simulator" target="_blank" rel="noreferrer">
+                                    <a href="https://github.com/JoGabriel-Santos/resto" target="_blank" rel="noreferrer">
 
                                         <h3 className="heading-tertiary step-tittle">
-                                            MIPS Simulator
+                                            Resto
                                         </h3>
                                     </a>
 
                                     <p className="step-description">
-                                        A CPU designed with a MIPS instruction set that operates on a monocycle architecture
+                                        An HTML and CSS-based website for a fast food restaurant was created as a
+                                        project to fulfill the requirements of a Web Development discipline
                                     </p>
 
                                     <div className="technology-used">
-                                        <i className="bi bi-filetype-java"></i>
+                                        <i className="bi bi-filetype-html"></i>
+                                        <i className="bi bi-filetype-css"></i>
+                                        <i className="bi bi-filetype-php"></i>
                                     </div>
                                 </div>
 
-                                <a href="https://github.com/JoGabriel-Santos/mips-simulator" target="_blank" rel="noreferrer">
+                                <a href="https://github.com/JoGabriel-Santos/resto" target="_blank" rel="noreferrer">
                                     <div className="step-image-box step-image-box-text-first">
-                                        <img className="step-image" src={require('../util/projects/mips.jpg')} alt=""/>
+                                        <img className="step-image" src={require('../util/projects/resto.jpg')} alt=""/>
                                     </div>
                                 </a>
                             </div>
